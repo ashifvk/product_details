@@ -1,0 +1,54 @@
+.classname {
+    transform: translateX(0);
+    width: 450px;
+    height: 800px;
+    display: block !important;
+    position: fixed;
+    transition: .5s;
+    overflow-y: auto;
+    top: 0;
+    right: -400px;
+    background-color: black;
+    z-index: 9999;
+    padding: 50px 40px 0px 40px;
+    animation-name: cssAnimation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+@keyframes cssAnimation {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-400px);
+        transform: translateX(-400px);
+    }
+}
+
+
+
+
+.bg {
+    background-color: black;
+    width: 100vw !important;
+}
+
+.modal-content {
+    background-color: black !important;
+}
+
+.no {
+    display: none;
+}
+
+#anim {
+    display: none;
+}
